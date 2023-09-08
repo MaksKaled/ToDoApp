@@ -109,3 +109,23 @@ ul li span:hover{
     background-color: #edeef0;
     
 }
+
+@media(max-width:415px) {
+    body{
+        background: #000;
+    }
+    button{
+        padding: 10px 15px;
+
+    }
+    input{
+        padding: 5px;
+
+    }
+    .row{
+    justify-content:space-evenly;}
+    .todo-app{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
