@@ -128,4 +128,7 @@ ul li span:hover{
         padding-left: 5px;
         padding-right: 5px;
     }
+    .todo-app{
+        margin: 0 auto;
+    }
 }
