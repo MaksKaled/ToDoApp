@@ -9,7 +9,10 @@ if(inputBox.value === '')
     alert('нужно что-то написать')
 }else{
     let li = document.createElement('li');
-    li.innerHTML = inputBox.value;
+    li.className = 'textField'
+    let p = document.createElement('p');
+    li.appendChild(p)
+    p.innerHTML = inputBox.value;
     listContainer.appendChild(li);
 
     let editButton = document.createElement('button');
@@ -27,7 +30,7 @@ saveData();
 
 
 listContainer.addEventListener('click',function(e){
-if(e.target.tagName === 'LI'){
+if(e.target.tagName === 'P'){
     e.target.classList.toggle('checked')
     saveData();
 }else if(e.target.tagName === 'SPAN'){

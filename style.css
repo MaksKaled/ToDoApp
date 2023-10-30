@@ -53,6 +53,7 @@ li button{
     color: #000;
     background: transparent;
     padding: 5px 8px;
+    
 }
 ul li button:hover{
     background-color: #ff5a47;
@@ -78,10 +79,14 @@ ul li{
     position: relative;
     text-overflow: ellipsis;
     overflow: hidden;
+    min-height: 44px;
+    word-break: break-all;
+    
     
 }
 
-ul li::before{
+
+ul li p::before{
     content: '';
     position: absolute;
     height: 28px;
@@ -94,12 +99,15 @@ ul li::before{
     left: 8px;
 }
 
-ul li.checked{
+ul li p.checked{
     color: tomato;
     text-decoration: line-through;
     }
 
-    ul li.checked::before{
+    ul li p {
+        width: 85%;
+    }
+    ul li p.checked::before{
         background-image: url(img/8685578_ic_fluent_checkbox_checked_filled_icon.svg);
     }
 
@@ -133,6 +141,10 @@ ul li span:hover{
     input{
         padding: 5px;
 
+    }
+    p{
+        width: fit-content;
+        padding-right: 25px;
     }
     .row{
     justify-content:space-evenly;}
