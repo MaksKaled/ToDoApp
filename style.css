@@ -130,6 +130,10 @@ ul li span:hover{
     
 }
 
+input[type=text]{
+    font-size: 25px;
+}
+
 @media(max-width:415px) {
     body{
         background: #000;
@@ -156,3 +160,26 @@ ul li span:hover{
         margin: 0 auto;
     }
 }
+@media(max-width:582px){
+    #addBtn{
+        padding: 15px 8px;
+    }
+    input[type=text]{
+        font-size: 25px;
+        width: 70%;
+    }
+    .textField{    
+        font-size: 25px;
+    }
+    
+    ul li p::before{
+        top: 12px;
+    }
+    .textField button{
+        top:10px
+    }
+    .textField span{
+        top:8px
+    }
+}
+

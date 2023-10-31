@@ -1,6 +1,6 @@
 const inputBox = document.getElementById('input-box');
 const listContainer = document.getElementById('list-container');
-console.log(inputBox.value)
+// console.log(inputBox.value)
 
 
 function addTask(){
